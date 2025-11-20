@@ -77,3 +77,12 @@ export default defineConfig([
 - Please use your own Gemini API Key.
 - I apologize for not providing it due to the high volume of API calls.
 - In the future, I will also add this feature and other important features as well.
+
+#### Development guide
+
+- Use any Linux/Mac environment to run this code locally.
+- Then fork and clone the repo on your own Github and system.
+- `cd medical_ai_agent-assistent` then `npm install` and `npm run dev`
+- Open any browser and type `http://localhost:5173` 
+- Then enter you own Gemini API Key (mention previously)
+- and all good.
