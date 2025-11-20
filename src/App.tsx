@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Shield, Activity, Pill, Clock, AlertCircle, Search, CheckCircle, ChevronRight, Settings, X, BookOpen } from 'lucide-react';
+import { Send, Shield, Activity, Pill, Clock, AlertCircle, Search, CheckCircle, ChevronRight, Settings, X, BookOpen, Github } from 'lucide-react';
 
 /**
  * Medical Assistant AI Agent
@@ -235,15 +235,16 @@ const MedicalAssistant = () => {
       {/* Header */}
       <header className="bg-teal-700 text-white shadow-md sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="bg-white/20 p-2 rounded-full">
-              <Activity size={24} className="text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold tracking-wide">MediAssist AI</h1>
-              <p className="text-xs text-teal-100 opacity-80">Powered by Gemini & Google Search</p>
-            </div>
+        <div className="flex items-center gap-2">
+          <div className="bg-white/20 p-2 rounded-full">
+            <Activity size={24} className="text-white" />
           </div>
+          <div>
+            <h1 className="text-xl font-bold tracking-wide">MediAssist AI</h1>
+            <p className="text-xs text-teal-100 opacity-80">Powered by Gemini & Google Search</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
           <button 
             onClick={() => setShowSettings(!showSettings)}
             className="p-2 hover:bg-teal-600 rounded-full transition-colors"
@@ -251,8 +252,19 @@ const MedicalAssistant = () => {
           >
             <Settings size={20} />
           </button>
+          <a 
+            href="https://github.com/SubhadipD9/medical_ai_agent-assistent" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-2 hover:bg-teal-600 rounded-full transition-colors"
+            title="GitHub Repository"
+          >
+            <Github size={20} />
+          </a>
         </div>
-      </header>
+      </div>
+    </header>
+
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         
