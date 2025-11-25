@@ -310,7 +310,7 @@ const MedicalAssistant = () => {
             <Settings size={20} />
           </button>
           <a 
-            href="https://github.com/SubhadipD9/medical_ai_agent-assistent" 
+            href="https://github.com/SubhadipD9" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 hover:bg-teal-600 rounded-full transition-colors"
