@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive or non-public areas
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
+Disallow: /tmp/
+
+# Prevent duplicate or unnecessary crawling
+Disallow: /search
+Disallow: /*?*
+
+# Allow important assets
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
